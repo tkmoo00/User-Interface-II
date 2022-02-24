@@ -15,16 +15,12 @@ body {
 
 header {
   width: 100vw;
-  height: 200px;
+  height: 20vh;
   display: flex;
   justify-content: space-around;
   background-image: url(../images/beach.jpg);
   align-items: center;
   padding: 3%;
-}
-
-header nav {
-  display: flex;
 }
 
 nav {
@@ -69,11 +65,11 @@ main img {
 }
 
 .text-box p {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 footer {
-  background-color: gray;
+  background-color: #81a4cd;
   width: 100vw;
   height: 15vh;
   display: flex;
@@ -83,7 +79,7 @@ footer {
 }
 
 footer p {
-  font-size: 25px;
+  font-size: 1.563rem;
   margin-bottom: 1%;
 }
 
@@ -96,5 +92,19 @@ footer button {
   header {
     display: flex;
     flex-direction: column;
+  }
+
+  .text-box {
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+
+  header {
+    min-height: 30vh;
   }
 }
